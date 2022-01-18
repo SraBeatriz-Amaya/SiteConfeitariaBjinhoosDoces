@@ -1,0 +1,782 @@
+    body {
+        margin: 0;
+        background-color: white;
+        padding: 2px;
+    }
+    
+    #container {
+        width: 100%;
+        background-color: white;
+        height: 100vh;
+        display: inline-table;
+        margin: 0;
+    }
+    
+    #container .topo {
+        width: 100%;
+        height: 160px;
+        background-color: #F1B4CC;
+        margin: 0;
+    }
+    
+    #post_image {
+        width: 250px;
+        height: 150px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        margin-top: -54px;
+        margin-left: -50px;
+        display: inline-table;
+    }
+    
+    .search-box {
+        position: absolute;
+        top: 13%;
+        left: 40px;
+        transform: translate(-50%, -50%);
+        background: #FFDAB9;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+    
+    .search-btn {
+        color: #8B4726;
+        float: right;
+        width: 20px;
+        height: 20px;
+        border-radius: 40%;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .search-box:hover>.search-txt {
+        width: 260px;
+        padding: 0 5px;
+    }
+    
+    .search-box:hover>.search-txt {
+        background: none;
+    }
+    
+    .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: black;
+        font-size: 16px;
+        transition: 0.3s;
+        line-height: 20px;
+        width: 0px;
+    }
+    
+    .btn-group {
+        align-items: center;
+        margin: 10px;
+        margin-right: 50px;
+        display: inline;
+        text-align: center;
+        float: right;
+    }
+    
+    #container #lista ul {
+        background-color: #FFDAB9;
+        list-style: none;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    #lista ul li {
+        display: inline;
+        margin-right: 5%;
+        margin-left: 5%;
+        position: center;
+    }
+    
+    #lista ul li a {
+        padding: 10px 5px 5px 5px;
+        display: inline-block;
+        color: #8B4726;
+        /*Letra*/
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Magic Sparkle";
+    }
+    
+    #lista a:hover {
+        color: #FF1493;
+    }
+    
+    .fundo {
+        font-size: 16px;
+        background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('./img/fundo.jpg');
+        height: 600px;
+        background-size: cover;
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+    }
+    
+    .fundo {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .box-filme {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    .carrosel-filmes {
+        margin-top: -320px;
+    }
+    
+    .titulo-galeria,
+    .h2 {
+        margin-top: -20px;
+        background-color: #F1B4CC;
+        color: #8B4726;
+        font-family: "Magic Sparkle";
+        font-size: 24px;
+        font-style: unset;
+    }
+    
+    .sobre {
+        background-color: #FAF0E6;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .bg-footer {
+        background-color: #F1B4CC;
+        color: #8B4726;
+        font-family: "Magic Sparkle";
+        font-size: 24px;
+        font-style: unset;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /*Login*/
+    
+    .inner {
+        max-width: 500px;
+        margin: auto;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .login {
+        margin-left: 100px;
+    }
+    
+    .login input {
+        width: 250px;
+        margin-left: -60px;
+    }
+    
+    .entrar a {
+        text-decoration: none;
+        color: #ff9a9c;
+        transition: all 0.3s ease;
+    }
+    
+     :focus {
+        outline: none;
+    }
+    
+    .login h3 {
+        margin-top: 10px;
+        margin-left: -250px;
+        font-size: 35px;
+        font-family: "ElMessiri-SemiBold";
+        text-align: center;
+        margin-bottom: 27px;
+        color: #8B4726;
+    }
+    
+    .form-holder {
+        padding-left: 80px;
+        position: relative;
+    }
+    
+    .campo {
+        display: flex;
+        width: 100%;
+        border-radius: 23.5px;
+        height: 47px;
+        padding: 0 24px;
+        color: black;
+        font-size: 16px;
+        border: none;
+        background: #FFC0CB;
+        margin-bottom: 25px;
+    }
+    
+     ::-webkit-input-placeholder {
+        color: white;
+    }
+    
+    .entrar .btn-entrar {
+        letter-spacing: 2px;
+        border: none;
+        width: 133px;
+        height: 50px;
+        margin-left: 80px;
+        border-radius: 23.5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #FFC0CB;
+        font-size: 16px;
+        color: #8B4726;
+        text-transform: uppercase;
+        font-family: "Montserrat-SemiBold";
+    }
+    
+    .entrar p {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    /*Cadastro*/
+    
+    .inner {
+        max-width: 500px;
+        margin: auto;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .cadastro {
+        margin-left: 100px;
+    }
+    
+    .cadastro input {
+        width: 250px;
+        margin-left: -60px;
+    }
+    
+    .cadastro a {
+        text-decoration: none;
+        color: #ff9a9c;
+        transition: all 0.3s ease;
+    }
+    
+    .form-login a {
+        text-decoration: none;
+        color: #ff9a9c;
+        transition: all 0.3s ease;
+    }
+    
+     :focus {
+        outline: none;
+    }
+    
+    .cadastro h3 {
+        margin-top: 10px;
+        margin-left: -250px;
+        font-size: 35px;
+        font-family: "ElMessiri-SemiBold";
+        text-align: center;
+        margin-bottom: 27px;
+        color: #8B4726;
+    }
+    
+    .form-holder {
+        padding-left: 24px;
+        position: relative;
+    }
+    
+    .campo {
+        display: flex;
+        width: 100%;
+        border-radius: 23.5px;
+        height: 47px;
+        padding: 0 24px;
+        color: black;
+        font-size: 16px;
+        border: none;
+        background: #FFC0CB;
+        margin-bottom: 25px;
+    }
+    
+     ::-webkit-input-placeholder {
+        color: white;
+    }
+    
+    .btn-cadastrar {
+        letter-spacing: 1px;
+        border: none;
+        width: 120px;
+        height: 50px;
+        border-radius: 23.5px;
+        background: #FFC0CB;
+        margin-top: -50px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #8B4726;
+        text-transform: uppercase;
+        font-family: "Montserrat-SemiBold";
+    }
+    
+    .cadastro .checkbox {
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 37px;
+        margin-left: -25px;
+        margin-right: -15px;
+    }
+    
+    .checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .checkbox input:checked~.checkmark:after {
+        display: flex;
+    }
+    
+    .cadastro .checkmark {
+        position: absolute;
+        top: 2px;
+        left: -15px;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #e7e7e7;
+    }
+    
+    .checkmark:after {
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #ff9a9c;
+        position: absolute;
+        display: none;
+    }
+    /*Local*/
+    
+    .local {
+        margin-top: 35px;
+        background-color: #FAF0E6;
+        color: #8B4726;
+        font-family: "Magic Sparkle";
+        font-size: 24px;
+    }
+    /*Encomenda*/
+    
+    #produto,
+    #qntd {
+        width: 280px;
+        margin: 10px;
+        margin-left: 70px;
+    }
+    
+    .encomenda-p {
+        margin-left: 20%;
+        width: 60%;
+    }
+    
+    #usr,
+    #paga {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .titulo-galeria,
+    .h2 {
+        margin-top: -20px;
+        background-color: #F1B4CC;
+        color: #8B4726;
+        font-family: "Magic Sparkle";
+        font-size: 24px;
+        font-style: unset;
+    }
+    
+    .btn-encomenda {
+        letter-spacing: 2px;
+        border: none;
+        width: 133px;
+        height: 50px;
+        margin-left: 15%;
+        border-radius: 23.5px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background: #FFC0CB;
+        font-size: 14px;
+        color: #8B4726;
+        text-transform: uppercase;
+        font-family: "Montserrat-SemiBold";
+    }
+    /*Cardapio*/
+    
+    .compra {
+        position: absolute;
+        right: 50px;
+        bottom: 15px;
+        display: flex;
+        font-size: 30px;
+        top: 125px;
+        color: #8B4726;
+    }
+    
+    a.compra:link,
+    a.compra:visited {
+        text-decoration: none
+    }
+    
+    a.compra:hover {
+        text-decoration: none;
+        color: #FF6A6A;
+    }
+    
+    .centro {
+        margin-left: 20%;
+        width: 60%;
+    }
+    
+    .guia {
+        margin-top: 0;
+        background-color: antiquewhite;
+        color: black;
+    }
+    
+    .btn-comprar {
+        letter-spacing: 2px;
+        border: none;
+        width: 133px;
+        height: 50px;
+        margin-right: 19px;
+        border-radius: 23.5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background: #FFC0CB;
+        font-size: 14px;
+        color: #8B4726;
+        text-transform: uppercase;
+        font-family: "Montserrat-SemiBold";
+    }
+    
+    @media screen and (min-width:442px) {
+        body {
+            margin: 0;
+            background-color: white;
+            padding: 2px;
+        }
+        #container {
+            width: 100%;
+            background-color: white;
+            height: 100vh;
+            display: inline-table;
+            margin: 0;
+        }
+        #container .topo {
+            width: 100%;
+            height: 160px;
+            background-color: #F1B4CC;
+            margin: 0;
+        }
+        #post_image {
+            width: 250px;
+            height: 150px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            margin-top: -54px;
+            margin-left: -50px;
+            display: inline-table;
+        }
+        .search-box {
+            position: absolute;
+            top: 13%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            background: #FFDAB9;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+        .search-btn {
+            color: #8B4726;
+            float: right;
+            width: 20px;
+            height: 20px;
+            border-radius: 30%;
+            background: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .search-box:hover>.search-txt {
+            width: 250px;
+            padding: 0 5px;
+        }
+        .search-box:hover>.search-txt {
+            background: none;
+        }
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: black;
+            font-size: 16px;
+            transition: 0.3s;
+            line-height: 20px;
+            width: 0px;
+        }
+        .btn-group {
+            align-items: center;
+            margin: 10px;
+            margin-right: 50px;
+            display: inline;
+            text-align: center;
+            float: right;
+        }
+        #container #lista ul {
+            background-color: #FFDAB9;
+            list-style: none;
+            overflow: hidden;
+            text-align: center;
+        }
+        #lista ul li {
+            display: inline;
+            margin-right: 5%;
+            margin-left: 5%;
+            position: center;
+        }
+        #lista ul li a {
+            padding: 10px 5px 5px 5px;
+            display: inline-block;
+            color: #8B4726;
+            /*Letra*/
+            text-decoration: none;
+            font-size: 18px;
+            font-family: "Magic Sparkle";
+        }
+        #lista a:hover {
+            color: #FF1493;
+        }
+        .fundo {
+            font-size: 16px;
+            background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('./img/fundo.jpg');
+            height: 600px;
+            background-size: cover;
+            display: flex;
+            justify-content: baseline;
+            align-items: baseline;
+        }
+        .fundo {
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+        .box-filme {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .carrosel-filmes {
+            margin-top: -320px;
+        }
+        .titulo-galeria,
+        .h2 {
+            margin-top: -20px;
+            background-color: #F1B4CC;
+            color: #8B4726;
+            font-family: "Magic Sparkle";
+            font-size: 24px;
+            font-style: unset;
+        }
+        .sobre {
+            background-color: #FAF0E6;
+            padding-top: 60px;
+            padding-bottom: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .bg-footer {
+            background-color: #F1B4CC;
+            color: #8B4726;
+            font-family: "Magic Sparkle";
+            font-size: 24px;
+            font-style: unset;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        /*Login*/
+        .inner {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+        .login {
+            margin-left: 100px;
+        }
+        .login input {
+            width: 250px;
+        }
+        .entrar a {
+            text-decoration: none;
+            color: #ff9a9c;
+            transition: all 0.3s ease;
+        }
+         :focus {
+            outline: none;
+        }
+        .login h3 {
+            margin-top: 10px;
+            margin-left: -250px;
+            font-size: 35px;
+            font-family: "ElMessiri-SemiBold";
+            text-align: center;
+            margin-bottom: 27px;
+            color: #8B4726;
+        }
+        .form-holder {
+            padding-left: 35px;
+            position: relative;
+        }
+        .campo {
+            display: flex;
+            width: 100%;
+            border-radius: 23.5px;
+            height: 47px;
+            padding: 0 24px;
+            color: black;
+            font-size: 16px;
+            border: none;
+            background: #FFC0CB;
+            margin-bottom: 25px;
+        }
+         ::-webkit-input-placeholder {
+            color: white;
+        }
+        .entrar .btn-entrar {
+            letter-spacing: 2px;
+            border: none;
+            width: 133px;
+            height: 50px;
+            margin-left: 40px;
+            border-radius: 23.5px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #FFC0CB;
+            font-size: 16px;
+            color: #8B4726;
+            text-transform: uppercase;
+            font-family: "Montserrat-SemiBold";
+        }
+        .entrar p {
+            margin-top: 10px;
+            margin-left: -20px;
+        }
+        /*Local*/
+        .local {
+            margin-top: 35px;
+            background-color: #FAF0E6;
+            color: #8B4726;
+            font-family: "Magic Sparkle";
+            font-size: 24px;
+        }
+        /*Encomenda*/
+        #produto,
+        #qntd {
+            width: 280px;
+            margin: 10px;
+            margin-left: 70px;
+        }
+        .encomenda-p {
+            margin-left: 20%;
+            width: 60%;
+        }
+        #usr,
+        #paga {
+            margin: 5px;
+            padding: 5px;
+        }
+        .titulo-galeria,
+        .h2 {
+            margin-top: -20px;
+            background-color: #F1B4CC;
+            color: #8B4726;
+            font-family: "Magic Sparkle";
+            font-size: 24px;
+            font-style: unset;
+        }
+        .btn-encomenda {
+            letter-spacing: 2px;
+            border: none;
+            width: 133px;
+            height: 50px;
+            margin-left: 15%;
+            border-radius: 23.5px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            background: #FFC0CB;
+            font-size: 14px;
+            color: #8B4726;
+            text-transform: uppercase;
+            font-family: "Montserrat-SemiBold";
+        }
+        /*Cardapio*/
+        .centro {
+            margin-left: 20%;
+            width: 60%;
+        }
+        .guia {
+            margin-top: 0;
+            background-color: antiquewhite;
+            color: black;
+        }
+        .btn-comprar {
+            letter-spacing: 2px;
+            border: none;
+            width: 133px;
+            height: 50px;
+            margin-right: 19px;
+            border-radius: 23.5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            background: #FFC0CB;
+            font-size: 14px;
+            color: #8B4726;
+            text-transform: uppercase;
+            font-family: "Montserrat-SemiBold";
+        }
+    }

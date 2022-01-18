@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Principal/principal.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <div class="topo">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
+                        Conta
+                        </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../Principal/cadastro.html">Cadastra-se</a>
+                        <a class="dropdown-item" href="../Principal/login.html">Login</a>
+                    </div>
+
+                </div>
+
+                <img src="../img/logo1.png" alt="logo" id="post_image" />
+            </div>
+
+            <div id="lista">
+                <ul>
+                    <li><a href="../Principal/principal.html">BjinhoosDoces</a></li>
+                    <li><a href="../Principal/cardapio.html">Cardápio</a></li>
+                    <li><a href="../Principal/encomenda.html">Encomendas</a></li>
+                    <li><a href="../Principal/local.html">Localização</a></li>
+                </ul>
+
+                <br/>
+            </div>
+            <div class="centro">
+                <div class="inner ">
+                    <div class="cadastro">
+                        <form action="../Principal/cadastro.php">
+                            <h3>Cadastro</h3>
+                            <div class="form-holder">
+                                <input id="nome" name="nome" type="text" placeholder="Nome" class="campo">
+                            </div>
+                            <div class="form-holder">
+                                <input id="email" name="email" type="text" placeholder="E-mail" class="campo">
+                            </div>
+                            <div class="form-holder">
+                                <input id="telefone" name="telefone" type="text" placeholder="Telefone" class="campo">
+                            </div>
+                            <div class="form-holder">
+                                <input id="senha1" name="senha1" type="Password" placeholder="Senha" class="campo" style="font-size: 15px;">
+                            </div>
+                            <div class="form-holder">
+                                <input id="senha2" name="senha2" type="Password" placeholder="Confirme Senha" class="campo" style="font-size: 15px;">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input id="aceito" type="checkbox" checked> Eu aceito os <a href="#" class="linktc">Termos & Condições</a>
+                                        <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-login">
+                                <button type="submit" class="btn-cadastrar" onclick="validar();">Cadastrar</button>
+                                <button class="btn-cadastrar">Cancelar</button>
+                                <p>Já possui uma conta? <a href="../Principal/login.php" class="linkc">Login</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="container-fluid text-center bg-footer">
+                <p>Desenvolvido por Beatriz e Jezreel</p>
+            </footer>
+        </div>
+
+    </header>
+
+</body>
+
+</html>
+
+<script lang="javascript">
+    function validar() {
+        if (nome.value.length <= 3) {
+            alert("Informe o seu nome!")
+            nome.value = "";
+            nome.focus();
+            return false;
+        }
+        if (telefone.value.length == 9) {
+            alert("Informe um telefone no formato 99999-9999 !")
+            telefone.value = "";
+            telefone.focus();
+            return false;
+        }
+        if (email.value.length < 6 || email.value.indexOf("@") <= 0 ||
+            email.value.lastIndexOf(".") <= email.value.indexOf("@")) {
+            alert("Informe o email corretamente !")
+            email.value = "";
+            email.focus();
+            return false;
+        }
+        if (senha1.value.length < 6 && isNaN(senha1.value.length) == false) {
+            alert("Informe uma senha alfanumerica de pelo menos 6 digitos !")
+            senha1.value = "";
+            senha1.focus();
+            return false;
+        }
+        if (senha1.value.length != senha2.value.length) {
+            alert("A senha e confirmação não batem!")
+            senha1.value = "";
+            senha2.value = "";
+            senha1.focus();
+            return false;
+        }
+        if (aceito.checked == false) {
+            alert("E nescessario ler e aceitar os termos !");
+            aceito.focus();
+            return false;
+        }
+        alert("Cadastro Ok")
+
+    }
+</script>
